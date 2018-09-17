@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!-- select태그는 사용자에게 선택할 수 있는 미리 구성된 정보를 제공하여 잘못 입력되는 경우의 수를 줄일 수 있음  -->
+    <label for="reg">학과</label>
+    <!-- size 속성은 브라우져에서(한화면에서) 한번에 볼 수 있는 수  기본은 1-->    
+    <!-- multiple 속성은 다중선택을 가능하게 한다. ctrl키를 누른채로 누르면 여러개가 선택가능 -->
+    <select id="reg" size="3" multiple>      
+        <!-- value 속성은 서버로 데이터 전송시 실제로 전송될 데이터를 입력 -->
+        <!-- selected 속성은 화면 로드 시 기본적으로 선택되어 있는 항복을 설정 -->
+        <option>건축공학과</option>
+        <option>기계공학과</option>
+        <option>산업공학과</option>
+        <option>전기전자공학과</option>
+        <OPtion selected>컴퓨터공학과</OPtion>
+        <option>화학공학과</option>
+    </select>
+
+    <br><hr><br>
+
+    <label for="reg2">학과</label>
+    <select id="reg2">
+        <optgroup label="공과대학">
+            <option value="archi">건축공학과 </option>
+            <option value="mechanic">기계곻학과</option>
+            <option value="indust">산업공학과</option>
+            <option value="elce">전기전자공학과</option>
+            <option value="computer">컴퓨터공학과</option>
+            <option value="chemical">화학공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang">어문학부</option>
+            <option value="philo">철학과</option>
+        </optgroup>
+    </select>
+    
+    <br><hr><br>
+
+    <!-- datalist태그는 select 태그와 동일하게 입력 목록을 제공하지만 사용자의 입력도 받을 수 있는 형태다  ex)검색창 -->
+    <!-- datalist는 input태그와 함꼐 사용해야함 input의 list가 datalist의 id를 읽어오는거다-->
+    <input type="text" id="interest" list="choices">
+    <datalist id="choices">
+        <option value="grammar" label="문법"></option>
+        <option value="voca"label="어휘"></option>
+        <option value="speaking" label="회화"></option>
+        <option value="listening" label="듣기"></option>
+        <option value="news" label="뉴스청취"></option>
+    </datalist>
+    
+    <br><hr><br>
+
+    <!-- textarea는 게시판 같은 것을 생성할 때 글을 입력할 수 있는 영역 -->
+    <!-- input 태그의 textbox는 한줄만 입력이 가능하지만 textarea는 여러줄의 입력이 가능하다 -->
+    <!-- cols가 가로의 px, rows는 줄수 -->
+    <textarea name="intro" id="" cols="60" rows="5"></textarea>
+</body>
+</html>

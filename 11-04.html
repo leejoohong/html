@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>동영상배경</title>
+    <style>
+    #bg{
+        position: fixed;
+        /* fixed는 브라우저를 기준으로 박혀있는 놈이라 공간을 차지하는것이 아니라 그냥 공중에 붕 떴다고 생각해라. */
+        left : 0;
+        top : 0;
+        /* position을 해서 0,0에 붕떠 있는거 */
+
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        /* width와 height를 100으로 줘서 전체가 다 백그라운드의 url의 크기가 먹힌거 */
+        
+        z-index: -100;
+        /* 글자부분이 위에 오기위해서 -값을 줘서 밑으로 내림 */
+        
+        background: url("../media/flame.jpg") left top no-repeat;
+        /* 스마트폰 사용자를 위해서 flame.jpg를 넣음 
+        스마트폰에서는 동영상 풀스크린 배경을 사용할 수 없기 때문에 동영상을 대신해서 넣을 부분임*/
+
+        /* 백그라운드 수평이 왼쪽, 수직이 위쪽으로 설정해서 시작은 좌상단이다., 이미지 반복을 하지않음 */
+        /* 여기서 jpg는 파일자체가 아니라 동영상의 썸네일 이미지다. */
+
+        background-size: cover;
+        /* 썸네일 이미지로 커버를 해서 전체가 다 덮인거다. */
+        
+    }
+    #container {
+        position: relative;
+        /* *bg가 fixed로 되어있어서 이녀석은 relative라도 (0,0)에서 시작하는거*/
+        text-align: center;
+        /* text-align : center로 되어있어서 글자가 중앙에 배치된거다. */
+        margin-top: 30%;
+        margin-left: 30%;
+        /* 그런데 거기서 마진 탑 과 레프트 30%씩 해서 우하단으로 조금 내려간거다. */
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+    /* 마우스를 가져다 대면 손가락 모양으로 바뀐거 */
+
+    a:link, a:visited {
+        text-decoration: none;
+        /* 하이퍼링크가 되면 텍스트의 밑줄이 나오는걸 지운거 visited는 방문되면 보라색으로 표시되는거를 지운거*/
+        color: #222;
+    }
+    </style>
+</head>
+<body>
+    <!-- 436page -->
+    <video id="bg" src="../media/flame.mp4" autoplay loop muted poster="flame.jpg"></video>
+    <div id="container">
+        <h2>사람을 구체적으로 도와주는 책</h2>
+        <h1><a href="http://www.easyspub.co.kr">이지스퍼블리싱</a></h1>
+    </div>
+    
+</body>
+</html>

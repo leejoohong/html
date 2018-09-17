@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>map태그</title>
+</head>
+<body>
+   <!-- 이미지 맵 -->
+   <!-- 이미지 맵은 기존 클릭 가능한 영역을 지정할 수 있음 -->
+   <!-- 기존의 링크는 이미지 전체에 하나의 링크를 설정하는 방식이지만 이미지맵은 하나의 이미지에 영역을 나누어서 여러개의 링크를 설정 할 수 있음 -->
+   
+   <h1>기존 a 태그를 이용한 이미지 링크 방식</h1>
+   <a href="https://store.kakaofriends.com/kr/index"><img src="./kakao.jpg" alt="카카오 프렌즈 이미지"></a>
+   <br><hr><br> 
+   <h1>이미지 맵을 이용한 링크 방식</h1>
+    <img src="./kakao.jpg" alt="카카오 프렌즈 이미지" usemap="#kakao">
+    <map name="kakao">
+    <area shape="rect" coords="60, 20, 120, 70" href="https://store.kakaofriends.com/kr/index" alt="튜브" style="border: 2px solid cadetblue">
+    <!-- coords는 줄 이미지를 정해서 좌상단에서 우하단으로 그림판에서 파일을 불러와서 좌표를 찾을 수 있다. -->
+    <area shape="rect" coords="240, 20, 300, 100" href="http://www.daum.net" alt="제이지">
+</map>
+<br><hr><br>
+<img src="./icecream2.jpg" alt="아이스크림" usemap="#icecream">
+<map name="icecream">
+    <area shape="rect" coords="22,40,136,368" href="http://www.naver.com" alt="아이스크림" target="_blank">
+</map>
+<h1>이미지맵 사용법</h1>
+<!-- 모니터 화면은 0,0 이 좌측 상단을 기준으로함 -->
+<!--이미지 맵은 이미지에서 자체의 좌표를 입력  -->
+<!-- 이미지 맵의 좌표는 start x, start y, end x, end y 순서 -->
+<img src="../img/blackpink.jpg" alt="블랙핑크" usemap="#blackpink">
+<map name="blackpink">
+    <area shape="" coords="210,100,365,702" href="https://namu.wiki/w/%EC%A7%80%EC%88%98(BLACKPINK)" alt="지수" target="_blank">
+    <!-- 한글은 주소로 표현을 못해서 유니코드로 주소가 변환이 된다, -->
+    <area shape="" coords="370,100,522,700" href="https://namu.wiki/w/%EC%A0%9C%EB%8B%88(BLACKPINK)" alt="제니" target="_blank">
+    <area shape="" coords="40,100,187,700" href="https://namu.wiki/w/%EB%A1%9C%EC%A0%9C(BLACKPINK)" alt="로제" target="_blank">
+    <area shape="" coords="530,100,670,700" href="https://namu.wiki/w/%EB%A6%AC%EC%82%AC(BLACKPINK)" alt="리사" target="_blank">
+</map>
+<!-- 비트맵이미지는 확대하면 계단형으로 깨진다. 그러나 백터이미지는 계산을 해서 나온걸로 계속 계산이되어서 안깨진다 단 용량이 크다 -->
+</body>
+</html>

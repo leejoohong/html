@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>table 태그 사용하기</title>
+    <style>
+            table, tr, th, td {border : 3px solid black;}
+        </style>
+</head>
+<body>
+    <h1>테이블표 만들기</h1>
+    <!--th 태그는 테이블에서 제목을 의미-->
+    <!--tr 태그는 테이블에서 가로줄을 의미-->
+    <!--td 태그는 테이블에서 세로줄을 의미-->
+    <!--tr과 td의 우선 순위는 tr -> td-->
+    <table>
+        <tr>
+            <td>1번째 칸</td>
+            <td>2번째 칸</td>
+            <td>3번째 칸</td>
+            <td>4번쨰 칸</td>
+            <td>5번째 칸</td>
+        </tr>
+        <tr>
+            <td>1번째 칸</td>
+            <td>2번째 칸</td>
+            <td style="padding: 3px">3번째 칸</td>
+            <td>4번째 칸</td>
+            <td>5번째 칸</td>
+        </tr>
+        <tr>
+                <td>1번째 칸</td>
+                <td>2번째 칸</td>
+                <td>3번째 칸</td>
+                <td>4번째 칸</td>
+                <td>5번째 칸</td>
+            </tr>
+    </table>
+
+    <div>
+        <p style="margin: 20px; border:5px dashed black; padding: 20px">html 태그 영역 설명</p>
+        <p style="margin: 10px; border:5px dashed black; padding: 10px">html 태그 영역 설명2</p>
+    </div>
+    <!-- colspan은 테이블에서 가로를 칸(가로로 합치기)을 하나로 합쳐주는 기능-->
+    <!--rowspan은 테이블에서 세로를 하나로 합쳐주는 기능-->
+    <table border="1">
+    <tr>
+        <th>이름</th>
+        <td>&nbsp;&nbsp;</td>
+        <th>연락처</th>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <th>주소</th>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <th>자기소개</th>
+        <td colspan="3"></td>
+    </tr>
+    </table>
+<br>
+    <!--th 테이블의 제목 부분을 설정할 때 사용-->
+    <table>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>이베일</th>
+                <th>주소</th>
+                <th>전화번호</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>홍길동</td>
+                <td>hong@nate.com</td>
+                <td>한국 어딘가..</td>
+                <td>010-1234-5678</td>
+            </tr>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>     
+        </thead>
+        <tbody>
+            <tr>
+                <th>유치원</th>
+                <td>117</td>
+                <td>252</td>
+                <td>5,547</td>
+                <td>474</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>304</td>
+                <td>3,437</td>
+                <td>86,954</td>
+                <td>6,111</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>돼지고기</th>
+                <th>소고기</th>
+                <th>닭고기</th>
+                <th>오리고기</th>
+                <th>칠면조고기</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>볶음</td>
+            <td>구이</td>
+            <td>조림</td>
+            <td>수육</td>
+            <td>튀김</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>1000원</td>
+                <td>1500원</td>
+                <td>2000원</td>
+                <td>2500원</td>
+                <td>3000원</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>이미지 출력하기</h1>
+    <img src="./snow.jpg" alt="눈">
+    <br>
+    <h1>다른 폴더에 있는 이미지 풀력하기</h1>
+    <h2>절대 경로를 사용한 이미지 출력하기</h2>
+<img src="/html/image/snow.jpg" alt="눈" height="200" width="200" >
+    <br>
+    <h2>상대경로를 이용한 이미지 출력하기</h2>
+    <img src="./snow.jpg" alt="눈" height="200" width="200">
+    <img src="../love.jpg" alt="사랑">
+    <br>
+    <h2>이미지의 관련 설명글 넣기(figure태그)</h2>
+    <p>옛날에는 p태그줬었다</p>
+    <img src="./snow.jpg" alt="눈" width="320" height="240">
+    <p>위 이미지는 눈입니다.(img와 p태그를 이용해서 만든거)</p>
+    <br>
+    <h3>figure와 figcaption를 사용한 이미지 설명</h3>
+    <figure>
+        <img src="snow.jpg" alt="눈" width="320" height="240">
+        <figcaption> 위 이미지는 눈입니다. </figcaption>
+    </figure>
+    <br><hr><br>
+    <h1>링크사용하기</h1>
+    <a href="http://www.naver.com">네이버 홈페이지</a>
+    <h1>target 속성을 사용한 링크 태그 사용하기</h1>
+    <p>target 속성은 네가지가 있다.</p>
+    <br>
+    <a href="http://www.apple.com/kr" target="_self"> 옵션 _self를 사용(자기자신이 직접 받는거)</a>
+    <br>
+    <a href="http://www.lge.co.kr" target="_blank"> 옵션 _blank를 사용(새탭으로 나타남)</a>
+    <br>
+    <a href="http://www.daum.net" target="_parent"> 옵션 _parent 사용</a>
+    <br>
+    <a href="http://www.giantsclub.com" target="_top"> 옵션 _top사용</a>
+    <p>_parent와 _top은 iframe을 써야지 효과를 볼 수 있다.</p>
+<br><br><br><br><br>
+</body>
+</html>

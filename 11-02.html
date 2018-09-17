@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Audio 파일 재생하기</title>
+    </head>
+    <body>
+        <audio src="../img/media/bgsound.mp3" controls autoplay loop muted preload="auto"></audio>
+        <br><hr><br>
+        <video src="../img/media/Painting.mp4" controls autoplay loop width="500px" height="500px"></video>
+        <!-- controls = 재생, 정지, 진행바, 볼륨등이 표시되는 바 막대를 만듦 -->
+        <!-- autoplay = 자동으로 재생이됨 -->
+        <!-- loop = 재생이 끝나면 반복재생 -->
+        <!-- muted = "음소거" -->
+
+        <br><hr><br>
+
+        <video controls autoplay loop>
+            <source src="../img/media/Painting.mp4" type="video/mp4">
+            <source src="../img/media/Painting.webm" type="video/webm"> 
+            <source src="../img/media/Painting.ogv" type="video/ogg">    
+        </video>
+        <!--source 태그는 브라우저 마다 코덱을 지원하는게 있고 안하는게 있어서 여러 미디어 파일을 올림(첫번째껄 실행 못하면 두번째 확장자 파일인 밑에껄로 이것도 안되면 세번째 껄로 실행))  -->
+        <!-- 사용법은 video 태그 안에 source태그를 설정하고 src와 type을 설정 -->
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="">
+        <label for="idbox">id : </label>
+        <!-- for부분에 input의 id값을 설정한 것을 그대로 해준다 -->
+        <input type="text" id="idbox"><br>
+
+        <label for="pwbox">password : </label>
+        <input type="password" id="pwbox"><br>
+        
+        <label for="emailbox"> e-mail : </label>
+        <input type="email" id=emailbox><br>
+        <!-- @를 안넣으면 오류가 나온다 -->
+        
+        <label for="hiddenbox">hidden box : </label>
+        <input type="hidden" id="hiddenbox"><br>
+        <!-- hidden은 서버로 넘길 때 안보이게끔해서 보낸다. -->
+        
+        <label for="searchbox">검색바</label>
+        <input type="search" id="searchbox"><br>
+        <!-- 검색바는 쓰면 뒤에 x가 생긴다 -->
+        <!-- 옛날에는 text로 다 하나였는데 text로 하다보니 헷갈려서 개발자의 편의에 의해서 나눠놓았다. -->
+
+        <label for="dtbox">날짜</label>
+        <input type="datetime-local" id="dtbox"><br>
+        <!-- 달력으로 나오게 해줌 -->
+
+        <label for="numbox">숫자입력</label>
+        <input type="number" id="numbox"><br>
+        <!-- 뒤에 상하버튼이 나와서 값을 높이거나 낮출수 있다. 문자는 안들어간다. 단, e는 자연상수값(2.718...)이라 들어간다 -->
+
+        <label for="rangebox">슬라이드 바</label>
+        <input type="range" id="rangebox" min="0" max="100" value="50"><br>
+        <!-- 슬라이드바가 움직일 때 마다 value값이 바뀌고 있고 submit을 넣으면 서버로 전송이 된다 -->
+
+        <label for="colorbox">색상표</label>
+        <input type="color" id="colorbox"><br>
+
+        <label for="imagebox">이미지 박스</label>
+        <input type="image" id="imagebox" src="./snow.jpg" width="50" height="50"><br>
+        <!-- 버튼대신에 이미지를 넣은 것이다 -->
+
+        <label for="filebox">파일 찾기</label>
+        <input type="file" id="filebox"><br>
+        <!-- 파일 업로드 할 때 사용됨 -->
+
+        <!-- <label for=""> 부분과 <input id="">를 동일하게 줘버리면 같은 기능을 하게끔 해준다.-->
+        <!-- 즉 lable 부분을 눌러도 input을 누른것과 같이 기능을 함 -->
+        <!-- 만약 그렇게 안준다면 lable부분을 아무리 눌러도 기능을 하지 않는다 -->
+        <!-- 이렇게 해주는 이유는 원래 input부분을 눌러야하는데 그러지 않고 lable부분을 누르면서 잘못됬다고 컴플레인을 걸어서 -->
+
+        <label for="textbox">text box</label>
+        <input type="text" id="textbox" placeholder="여기쓰시오" >
+        <!-- placeholder는 박스 안에 글을 쓰는거다 -->
+        <br>
+
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+        <!-- <label for="username">이름 : </label>
+        <input type="text" id="username"><br>
+        
+        <label for="stunum">학번 : </label>
+        <input type="text" id="stunum"> <br>
+    
+        <label for="stuclass">학과 : </label>
+        <input type="text" id="stuclass"><br> -->
+        <!-- 이렇게 세팅이되면 브라우저에선 우리가 박스안에 마우스로 클릭해야지 입력이 가능하다. -->
+
+        <form action="">      
+            <!-- 그런데 autofocus를 쓰면 자동적으로 브라우저를 띄우면 설정한 인풋태그 박스에 마우스가 들어가게 해준다. -->
+            <!-- autofocus는 html5에서 새로 추가된 기능으로 기존의 자바스크립트를 사용해야 했던 웹 페이지 로딩 시 특정 태그로 포커스를 주는 기능을 html로만 구현이 가능함 -->
+            <label for="username">이름 : </label>
+            <input type="text" id="username" autofocus required><br>
+            <!-- autofocus 설정법은 두가지 autofocus를 하던지 autofocus="autofocus"로 해준다 -->
+
+            <!-- placeholder는 박스안에 글자가 들어가게 한다. -->
+            <!-- 사용자가 입력해야할 정보나 그와 관련된 입력 방법에 대한 설명을 알려주는 역할 -->
+            <label for="stunum">학번 : </label>
+            <input type="text" id="stunum" placeholder="학번을 입력하세요"> <br>
+
+            <!--readonly는 읽기전용으로 만드는 것이다. -->
+            <!-- 그렇기 때문에 입력을 할려고 클릭을 해도 입력이 되지 않는다. -->
+            <!-- 화면 구성에 필요한 부분이나 사용자의 필요없는 부분에 사용하여 사용자의 입력을 막는 기능 -->
+            <!-- ex) 비밀번호 변경란만 필요하게 수정하게 하고 나머진 readonly를 써버리면 필요한 부분만 쓰게끔-->
+            <label for="stuclass">학과 : </label>
+            <input type="text" id="stuclass" value="보안전문가 과정" readonly><br>
+
+            <!-- 이번에는 required를 하기위해선 submit이 필요하고 submit을 할려면 form태그가 필요함 -->
+            <!-- required는 안에 있는 내용이 제대로 들어갔는지 확인을 해주는 명령어다. 만약 required를 넣은 곳에 입력을 안하면 입력하라고 창이 뜬다. -->
+
+
+            <!-- min max는 input 태그가 숫자형이나 날짜형일 경우 입력할 수 있는 최소값과 최대값을 설정함 -->
+            <!-- step은 input태그가 숫자형이나 날짜형일 경우 한번 스크롤 시 변경되는 값의 범위를 설정 -->
+
+            <!-- min과 max를 쓰기전에 타입으로 number를 쓰면 그 텍스트에 화살표로 계속해서 올리거나 내릴수 있다. -->
+            <!-- 그런데 min, max를 설정하면 그 설정된 범위에서 벗어나지 않는다 -->
+            <label for="stuage">나이 : </label>
+            <input type="number" id="stuage" min="0" max="10" step="2"> <br>
+
+            <!-- step은 한번 누를때마다 올라가고 내려갈때의 얼마큼 올라가고 내려가는지 단위를 설정하는거 -->
+            <!-- step을 2로했기 떄문에 2단위로 올라가고 내려가고 한다. -->
+            
+            <!--minlength, maxlength는 사용자의 문자 입력 중 최소값과 최대값을 설정함  -->
+            <!-- size는 화면에 출력되는 문자 수를 제한하는 기능을 가지고 있지만 브라우저에 따라 다르게 동작할 수 있음 -->
+            <label for="stuinfo">자기소개 : </label>
+            <input type="text" id="stuinfo" minlength="5" maxlength="20"  size="10"><br>
+
+            <input type="submit" value="확인">
+        </form>
+</body>
+</html>

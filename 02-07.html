@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style> table, tr, th, td {border: 1px solid black;} td {min-width : 100px;
+    max-width : 300px;}</style>
+</head>
+<body>
+    글자를 입력하기 위한 태그 
+    <p>p태그를 사용한 글 입력</p>
+    <br>
+    <p>p태그 사용하지 않고 그냥 글자를 입력할 경우 화면에 출력이 되지만 웹 브라우저의 특성에 따라서 다른 모양으로 출력 될 수 있음</p>
+
+   <br><br><br>
+    
+   <p>br태그는 각종 태그 및 글자를 <br> 위한 태그에서 줄바꿈 기능을 함</p>
+
+    <hr style="border: 2px solid violet;">
+    <p>hr태그는 가로(수평) 구분선을 출력하는 기능</p>
+
+    <pre>
+pre 태그는 입력한 그대로의 모양으로
+                                   화면에 글을 출력하는 태그
+        pre 태그는 code 태그와 kbd(키보드) 태그를 사용시에
+                  많이 사용함
+    </pre>
+
+    <ul>
+        <li>오렌지</li>
+        <li>자몽</li>
+        <li>레몬</li>
+        <li>수박</li>
+        <li>참외</li>
+    </ul>
+
+    <ol>
+        <li>소고기</li>
+        <li>닭고기</li>
+        <li>돼지고기</li>
+        <li>오리고기</li>
+    </ol>
+
+    <p>ul, ol,dl 태그는 화면에 목록을 만들어 주는 태그</p>
+    <p>li태그는 ul과 ol의 자식태그로써 실제 목록이 되는 태그</p>
+
+    <dl>
+        <dt>활어회
+        <dd>광어회</dd>
+        <dd>도다리</dd>
+        <dd>연어회</dd>
+        </dt>
+    </dl>
+
+    <table style="border: 1px solid black">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>직업</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>이주홍</td>
+                <td>백수</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>오세두</td>
+                <td>메이플용사</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>김민규</td>
+                <td>소환사</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>끝</td>
+                <td>학생들</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>table태그는 웹페이지에서 가장 많이 사용되는 태그 중 하나로 표를 만드는데 사용됨</p>
+    <p>구성은 표의 제목 부분을 나타내는 thead</p>
+    <p>표의 본문을 나타내는 tbody</p>
+    <p>표의 상태정보바 부분을 나타내는 tfoot</p>
+    <p>세가지로 나누어지는데 tfoot은 잘 안씀 페이저 부분(밑에서 다음으로 넘어가기)을 나타내기도 함</p>
+<p>테이블은 기본적으로 행을 나타내는 tr과 열을 나타내는 td, 그리고 표의 제목을 위한 th로 나누어 짐</p>
+<p>tr이 기준이며, tr안에 td가 들어가는 형태</p>
+<p>th는 tr과 동일한 기능을 가지고 있으나 각 열의 제목 부분에만 사용함</p>
+
+<table>
+    <thead>
+        <tr>
+        <TH>번호</TH>
+        <TH>이름</TH>
+        <TH>직업</TH>
+        <TH>성별</TH>
+        </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>다리우스</td>
+            <td>딜탱</td>
+            <td colspan="3">남자</td>
+        </tr> 
+        <tr>
+            <td>2</td>
+            <td>럭스</td>
+            <td>매직션</td>
+            <td colspan="2">여자</td>
+        </tr>       
+        <tr>
+            <td>3</td>
+            <td>가렌</td>
+            <td>탱커</td>
+            <td colspan="2">남자</td>
+        </tr>    
+        <tr>
+            <td>4</td>
+            <td>케이틀린</td>
+            <td>원딜</td>
+            <td colspan="2">여자</td>
+        </tr>
+    </tbody>    
+</table>
+
+<p>colspan과 rowspan은 테이블의 각각의 행 및 열을 하나로 합쳐주는 기능을 함</p>
+<br>
+<table>
+    <tr>
+        <th>제목1</th>
+        <th>제목2</th>
+        <th>제목3</th>
+        <th>제목4</th>        
+    </tr>
+    <tr>
+        <td>1번줄 1번째칸</td>
+        <td>1번줄 2번째칸</td>
+        <td>1번줄 3번째칸</td>
+        <td>1번줄 4번째칸</td>
+    </tr>
+    <tr>
+        <td>2번줄 1번째칸</td>
+        <td>2번줄 2번째칸</td>
+        <td>2번줄 3번째칸</td>
+        <td>2번줄 4번째칸</td>
+    </tr>  
+</table>
+<br>
+<table>
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>        
+        </tr>
+        <tr>
+            <td>1번줄 1번째칸</td>
+            <td>1번줄 2번째칸</td>
+            <td colspan="2">1번줄 3번째칸</td>
+            <!--합칠 칸의 첫번째 위치에서 colspan을 입력하고 몇개의 칸을 입력할 것인지 값을 입력-->
+            <!--합쳐진 나머지 칸의 td부분을 모두 삭제함-->
+            <!--1번줄 4번쨰칸을 삭제했음-->
+        </tr>
+        <tr>
+            <td>2번줄 1번째칸</td>
+            <td>2번줄 2번째칸</td>
+            <td>2번줄 3번째칸</td>
+            <td>2번줄 4번째칸</td>
+        </tr>  
+    </table>
+    <br>
+    <table>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+                <th>제목4</th>        
+            </tr>
+            <tr>
+                <td>1번줄 1번째칸</td>
+                <td rowspan="2">1번줄 2번째칸</td>
+                <!--첫번째 줄을 2번쨰 칸에서 2번쨰 줄의 2번째 칸과 합침-->
+                <td>1번줄 3번째칸</td>
+                <td>1번줄 4번째칸</td>
+                <!--칸을 세로로 합칠려면 rospan을 입력하고 합할 칸의 개수를 입력한다.-->
+                <!--지정한 위치의 다음 줄의 해당하는 칸을 삭제-->
+            </tr>
+            <tr>
+                <td>2번줄 1번째칸</td>
+                <!--2번째 줄 2번쨰 칸을 삭제함-->
+                <td>2번줄 3번째칸</td>
+                <td>2번줄 4번째칸</td>
+            </tr>  
+        </table>
+<br>
+<table>
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>        
+        </tr>
+        <tr>
+            <td>1번줄 1번째칸</td>
+            <td rowspan="2">1번줄 2번째칸</td>
+            <td colspan="2">1번줄 3번째칸</td>
+            <!--네번쨰 칸을 지움-->
+        </tr>
+        <tr>
+            <td>2번줄 1번째칸</td>
+            <!--rowspan때문에 2번째칸 지움-->
+            <td>2번줄 3번째칸</td>
+            <td>2번줄 4번째칸</td>
+        </tr>  
+    </table>
+    <br>
+    <table>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+                <th>제목4</th>        
+            </tr>
+            <tr>
+                <td colspan="4">1번줄 1번째칸</td>
+            </tr>
+            <tr>
+                <td>2번줄 1번째칸</td>
+                <td>2번줄 2번째칸</td>
+                <td>2번줄 3번째칸</td>
+                <td>2번줄 4번째칸</td>
+            </tr>  
+        </table>
+
+    
+</body>
+</html>
